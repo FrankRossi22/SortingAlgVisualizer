@@ -1,0 +1,131 @@
+.sortingAlgCont {
+    text-align: center;
+    margin: 30px;
+}
+.sortingAlgPageCont {
+    text-align: center;
+    margin: 30px;
+}
+
+.SortingButtonCont {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sortingControlLeft,
+.sortingControlRight {
+  flex: 1;
+  display: block;
+  align-items: center;
+}
+.sortingControlLeft > label {
+  display: block;
+}
+.sortingControlLeft > input {
+  display: block;
+}
+
+.sortingControlLeft {
+  justify-content: center;
+}
+
+.sortingControlRight {
+  justify-content: center;
+}
+
+.sortingControlCenter {
+  flex: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.SortingButtonCont input[type="range"] {
+  width: 150px;
+}
+
+.backButton {
+  margin: 5px;
+
+  font-size: 16px;
+  text-decoration: none;
+  padding: 2px 22px;
+  background-color: #f0f0f0;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  color: black;
+  transition: background-color 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #ddd;
+}
+
+.sortingControlRight > button {
+  margin: 5px;
+
+  text-decoration: none;
+  padding: 2px 22px;
+  background-color: #f0f0f0;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  color: black;
+  transition: background-color 0.2s ease;
+}
+
+.sortingControlRight > button:hover {
+  background-color: #ddd;
+}
+
+@media (min-width: 200px) {
+  .sortingControlRight > button{
+    font-size: 12px;
+    padding: 2px 12px;
+  }
+  .backButton {
+    font-size: 12px;
+    padding: 2px 12px;
+  
+  }
+  .SortingButtonCont input[type="range"] {
+    width: 80px;
+  }
+  .sortingAlgPageCont {
+    margin: 0px;
+  }
+}
+@media (min-width: 550px) {
+  .sortingControlRight > button{
+    font-size: 14px;
+    padding: 2px 12px;
+  }
+  .backButton {
+    font-size: 14px;
+    padding: 2px 12px; 
+  }
+  .SortingButtonCont input[type="range"] {
+    width: 120px;
+  }
+}
+@media (min-width: 850px) {
+  .sortingControlRight > button{
+    font-size: 16px;
+    padding: 2px 22px;
+  }
+  .backButton {
+    font-size: 16px;
+    padding: 2px 22px;
+  
+  }
+  .SortingButtonCont input[type="range"] {
+    width: 150px;
+  }
+}
+
